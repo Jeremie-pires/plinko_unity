@@ -30,7 +30,7 @@ public class ScoreBox : MonoBehaviour
 
             if (particulesPrefab != null)
             {
-                GameObject vfx = Instantiate(particulesPrefab, transform.position, Quaternion.identity);
+                GameObject vfx = Instantiate(particulesPrefab, transform.position + (Vector3.back * 0.5f), Quaternion.identity);
                 Destroy(vfx, 1f); 
             }
 
